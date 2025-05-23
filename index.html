@@ -1,75 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
   <title>SATO</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
 
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
 <body>
 
-  
   <div class="wrapper">
-    <div class="glass-wrapper slide-in-elliptic-top-fwd">
-      
-   
-      <div class="phone-wrapper slide-in-right">
+    <div class="glass-wrapper" data-aos="fade-up">
+      <div class="phone-wrapper" data-aos="zoom-in-left">
         <img class="phone" src="mockphone.png" alt="Phone with Sato app">
       </div>
 
-
-      <div class="logo-wrapper slide-in-left">
+      <div class="logo-wrapper" data-aos="zoom-in-right">
         <img class="logo" src="logo.png" alt="Sato Logo">
       </div>
 
-      <!-- Titles -->
-      <div class="title">
+      <div class="title" data-aos="fade-up" data-aos-delay="300">
         <h1 id="ttl">S.A.T.O - Your digital eye.</h1>
       </div>
 
-      <h2 id="tagline">Your guide for Electronic components.</h2>
-
-      <!-- Call to action -->
-      <div class="btn">
-        <p>Check out S.A.T.O now and tell us what you think!</p>
-        <a href="#" class="cta-button">Here!</a>
-      </div>
-
-      <!-- Main content -->
-      <div class="main-content">
-        <h2 class="text-pop-up-top">About SATO</h2>
-        <p id="about-sato" class="text-pop-up-top">
-          SATO is a smart mobile app that transforms your phone into a real-time learning tool. 
-          By scanning electronic components, it gives you instant, detailed information. Whether you're a beginner or a techie, SATO is your pocket tech assistant.
-        </p>
-      </div>
-      
-
-      <!-- Features -->
-      <div class="features">
-        <h2>Features</h2>
-        <ul id="feature-list" class="features-list">
-          <li>👁 Instant information on electronic components</li>
-          <li>👁 Real-Time Component Detection</li>
-          <li>👁 Interactive learning</li>
-          <li>👁 Offline availability</li>
-        </ul>
-      </div>
-    </div> <!-- End of glass-wrapper -->
-  </div> <!-- End of wrapper -->
-
-  <div class="footer">
-    <p>
-      <i class="fas fa-envelope"></i>
-      <a href="mailto:satoaimeow@gmail.com">Let's talk!</a>
-    </p>
+      <h2 id="tagline" data-aos="fade-up" data-aos-delay="500">Your guide for Electronic components.</h2>
+    </div>
   </div>
 
-  <script src="animition.js"></script>
-</body>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
 
+  <!-- Your animation script -->
+  <script src="animation.js"></script>
+</body>
 </html>
