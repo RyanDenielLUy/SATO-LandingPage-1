@@ -39,6 +39,3 @@
       }, 40); // typing speed
     }, i * 600); // delay per item
   });
-
-
-  
